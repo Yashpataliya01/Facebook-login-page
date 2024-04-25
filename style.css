@@ -1,0 +1,291 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, head {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.header{
+  width: 100%;
+  height: 100vh;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 9vh;
+  background-color: rgb(89, 89, 188);
+  justify-content: space-between;
+}
+.left h1{
+  font-size: 3em;
+  color: white;
+  margin-left: 5em;
+}
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;  
+  padding-right: 40px;
+}
+.right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 10px;
+}
+.checkbox{
+  display: flex;
+}
+.right li{
+  text-decoration: none;
+  color: white;
+}
+.right input{
+  background-color: bisque;
+}
+.btn{
+  background-color: rgb(115, 115, 246);
+  color: white;
+  margin-top: -15px;
+  width: 50px;
+}
+main{
+  width: 100vw;
+  height: 91vh;
+}
+.info{
+  width: 100%;
+  height: 91vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(230, 229, 246);
+}
+.left1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 100%;
+}
+.sub1{
+  width: 100%;
+  height: 100%;
+}
+.sub1 h2{
+  margin: 2em;
+  font-size: 2.5em;
+}
+.sub1 h4{
+  font-size: 1.2em;
+}
+.sub1 span{
+  font-weight: lighter;
+}
+.sub2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+.sub2 li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+.right1{
+  width: 50vw;
+  height: 100%;
+}
+.part{
+  margin: 20px;
+}
+ .sub5, .sub6, .sub7 {
+  margin-top: 10px;
+  width: 91.5%;
+}
+.sub4 input{
+  width: 20em;
+  height: 30px;
+  margin: 5px;
+}
+.sub5 input, .sub6 input, .sub7 input{
+  width: 41.2em;
+  height: 30px;
+  margin: 5px;
+}
+.dob{
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.gender{
+ display: flex;
+ font-size: 1.2em;
+ gap: 10px;
+ margin-top: 5px;
+}
+.option2{
+  margin-top: 20px;
+}
+.terms p{
+  margin-top: 30px;
+  width: 50%;
+}
+.btn2{
+  margin-top: 20px;
+}
+.btn2 button {
+  width: 25%;
+  height: 35px;
+  background-color: rgb(83, 173, 83);
+  border: none;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+}
+
+/*media query to make your web page more responsive for mobile view*/
+@media (max-width: 890px) {
+
+  body {
+    font-size: 14px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(230, 229, 246);
+  }
+
+  .header {
+    height: 100%;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px 0;
+    transition: height 0.3s ease;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    height: auto;
+    width: 100vw;
+    min-height: 100px; 
+  }
+
+  .left .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 0;
+  }
+
+  .right {
+    padding-right: 0; 
+    margin-top: 10px;
+  }
+
+  .right ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .right li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px; 
+  }
+
+  
+  .right input[type="text"],
+  .right input[type="password"] {
+    width: 90%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btn,
+  .btn2 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;  
+    transition: all 0.3s ease; 
+    cursor: pointer; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .btn:hover,
+  .btn2 button:hover {
+    background-color: #45a049
+  }
+  .info {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub1{
+    width: 100vw;
+    height: auto;
+  }
+
+  .left1,
+  .right1 {
+    width: 100vw;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub1 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    margin: 1em 0; 
+  }
+
+  .sub2 {
+    margin-top: 20px; 
+    margin-left: 0; 
+  }
+
+  .sub4 input,
+  .sub5 input,
+  .sub6 input,
+  .sub7 input {
+    width: 44.5%; 
+  }
+
+  .terms p {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
